@@ -1,0 +1,42 @@
+{
+    "type": "library",
+    "name": "rbtyang/simple-wechat",
+    "description": "A simple WeChat SDK",
+    "keywords": [
+        "wechat",
+        "wechat sdk",
+        "simple wechat sdk"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "robotyang",
+            "email": "robotyang123@163.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": "~7.0",
+        "guzzlehttp/guzzle": "^6.2",
+        "monolog/monolog": "^1.17"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SimpleWechat\\": "src/"
+        },
+        "files": [
+            "src/Support/helpers.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SimpleWechat\\Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
